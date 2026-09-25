@@ -1,0 +1,397 @@
+{
+ "spec": "GFS/1.0",
+ "profile": "crash",
+ "notes": [
+  "h_0 = secret; h_{i+1} = SHA-256(h_i hex string); terminatingHash = h_N; game k uses h_{N-k}",
+  "digest = HMAC-SHA256(key = gameHash, message = salt); h = first 52 bits; cents = floor(100 * 2^52 / (h + 1) * (1 - houseEdge)); result = max(100, cents) / 100"
+ ],
+ "secret": "5c1f7d3e8a2b4c6d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d",
+ "length": 12,
+ "terminatingHash": "bd84ed4ffd79306f49b613871485f7f8a78fa393b9ae5c13bcd8ea4156d15382",
+ "games": [
+  {
+   "index": 1,
+   "gameHash": "44d03a8debca6410dd70c52a3be7cf3a5b306d9bfd2573c939a33ed98d16c6ab",
+   "previousHash": "bd84ed4ffd79306f49b613871485f7f8a78fa393b9ae5c13bcd8ea4156d15382",
+   "salt": "0x000000000000000000000000000000000000000000000000000000000000abcd",
+   "houseEdge": 0.01,
+   "result": 1.12
+  },
+  {
+   "index": 1,
+   "gameHash": "44d03a8debca6410dd70c52a3be7cf3a5b306d9bfd2573c939a33ed98d16c6ab",
+   "previousHash": "bd84ed4ffd79306f49b613871485f7f8a78fa393b9ae5c13bcd8ea4156d15382",
+   "salt": "0x000000000000000000000000000000000000000000000000000000000000abcd",
+   "houseEdge": 0,
+   "result": 1.13
+  },
+  {
+   "index": 1,
+   "gameHash": "44d03a8debca6410dd70c52a3be7cf3a5b306d9bfd2573c939a33ed98d16c6ab",
+   "previousHash": "bd84ed4ffd79306f49b613871485f7f8a78fa393b9ae5c13bcd8ea4156d15382",
+   "salt": "galabet",
+   "houseEdge": 0.01,
+   "result": 1.13
+  },
+  {
+   "index": 1,
+   "gameHash": "44d03a8debca6410dd70c52a3be7cf3a5b306d9bfd2573c939a33ed98d16c6ab",
+   "previousHash": "bd84ed4ffd79306f49b613871485f7f8a78fa393b9ae5c13bcd8ea4156d15382",
+   "salt": "galabet",
+   "houseEdge": 0,
+   "result": 1.14
+  },
+  {
+   "index": 2,
+   "gameHash": "57be8e79a549bfac1fe6fa6d0a84503d2cf134f4d7b14e5dd77746fe12879424",
+   "previousHash": "44d03a8debca6410dd70c52a3be7cf3a5b306d9bfd2573c939a33ed98d16c6ab",
+   "salt": "0x000000000000000000000000000000000000000000000000000000000000abcd",
+   "houseEdge": 0.01,
+   "result": 13.31
+  },
+  {
+   "index": 2,
+   "gameHash": "57be8e79a549bfac1fe6fa6d0a84503d2cf134f4d7b14e5dd77746fe12879424",
+   "previousHash": "44d03a8debca6410dd70c52a3be7cf3a5b306d9bfd2573c939a33ed98d16c6ab",
+   "salt": "0x000000000000000000000000000000000000000000000000000000000000abcd",
+   "houseEdge": 0,
+   "result": 13.44
+  },
+  {
+   "index": 2,
+   "gameHash": "57be8e79a549bfac1fe6fa6d0a84503d2cf134f4d7b14e5dd77746fe12879424",
+   "previousHash": "44d03a8debca6410dd70c52a3be7cf3a5b306d9bfd2573c939a33ed98d16c6ab",
+   "salt": "galabet",
+   "houseEdge": 0.01,
+   "result": 7.32
+  },
+  {
+   "index": 2,
+   "gameHash": "57be8e79a549bfac1fe6fa6d0a84503d2cf134f4d7b14e5dd77746fe12879424",
+   "previousHash": "44d03a8debca6410dd70c52a3be7cf3a5b306d9bfd2573c939a33ed98d16c6ab",
+   "salt": "galabet",
+   "houseEdge": 0,
+   "result": 7.4
+  },
+  {
+   "index": 3,
+   "gameHash": "8a75bb831ce6b3db606276e19b103f1e36e7bba19e8cbeae36198339314b44ab",
+   "previousHash": "57be8e79a549bfac1fe6fa6d0a84503d2cf134f4d7b14e5dd77746fe12879424",
+   "salt": "0x000000000000000000000000000000000000000000000000000000000000abcd",
+   "houseEdge": 0.01,
+   "result": 2.85
+  },
+  {
+   "index": 3,
+   "gameHash": "8a75bb831ce6b3db606276e19b103f1e36e7bba19e8cbeae36198339314b44ab",
+   "previousHash": "57be8e79a549bfac1fe6fa6d0a84503d2cf134f4d7b14e5dd77746fe12879424",
+   "salt": "0x000000000000000000000000000000000000000000000000000000000000abcd",
+   "houseEdge": 0,
+   "result": 2.88
+  },
+  {
+   "index": 3,
+   "gameHash": "8a75bb831ce6b3db606276e19b103f1e36e7bba19e8cbeae36198339314b44ab",
+   "previousHash": "57be8e79a549bfac1fe6fa6d0a84503d2cf134f4d7b14e5dd77746fe12879424",
+   "salt": "galabet",
+   "houseEdge": 0.01,
+   "result": 2.37
+  },
+  {
+   "index": 3,
+   "gameHash": "8a75bb831ce6b3db606276e19b103f1e36e7bba19e8cbeae36198339314b44ab",
+   "previousHash": "57be8e79a549bfac1fe6fa6d0a84503d2cf134f4d7b14e5dd77746fe12879424",
+   "salt": "galabet",
+   "houseEdge": 0,
+   "result": 2.4
+  },
+  {
+   "index": 4,
+   "gameHash": "6aa6822ccb21bd0a2b6183f99b1831da446d4908fb46483bfdacd2758b5b32b8",
+   "previousHash": "8a75bb831ce6b3db606276e19b103f1e36e7bba19e8cbeae36198339314b44ab",
+   "salt": "0x000000000000000000000000000000000000000000000000000000000000abcd",
+   "houseEdge": 0.01,
+   "result": 1.34
+  },
+  {
+   "index": 4,
+   "gameHash": "6aa6822ccb21bd0a2b6183f99b1831da446d4908fb46483bfdacd2758b5b32b8",
+   "previousHash": "8a75bb831ce6b3db606276e19b103f1e36e7bba19e8cbeae36198339314b44ab",
+   "salt": "0x000000000000000000000000000000000000000000000000000000000000abcd",
+   "houseEdge": 0,
+   "result": 1.35
+  },
+  {
+   "index": 4,
+   "gameHash": "6aa6822ccb21bd0a2b6183f99b1831da446d4908fb46483bfdacd2758b5b32b8",
+   "previousHash": "8a75bb831ce6b3db606276e19b103f1e36e7bba19e8cbeae36198339314b44ab",
+   "salt": "galabet",
+   "houseEdge": 0.01,
+   "result": 1.01
+  },
+  {
+   "index": 4,
+   "gameHash": "6aa6822ccb21bd0a2b6183f99b1831da446d4908fb46483bfdacd2758b5b32b8",
+   "previousHash": "8a75bb831ce6b3db606276e19b103f1e36e7bba19e8cbeae36198339314b44ab",
+   "salt": "galabet",
+   "houseEdge": 0,
+   "result": 1.02
+  },
+  {
+   "index": 5,
+   "gameHash": "06648f5bb473b26a08940c7c030c9ff31dde4880dfffad9a3adefc87b0315a05",
+   "previousHash": "6aa6822ccb21bd0a2b6183f99b1831da446d4908fb46483bfdacd2758b5b32b8",
+   "salt": "0x000000000000000000000000000000000000000000000000000000000000abcd",
+   "houseEdge": 0.01,
+   "result": 25.45
+  },
+  {
+   "index": 5,
+   "gameHash": "06648f5bb473b26a08940c7c030c9ff31dde4880dfffad9a3adefc87b0315a05",
+   "previousHash": "6aa6822ccb21bd0a2b6183f99b1831da446d4908fb46483bfdacd2758b5b32b8",
+   "salt": "0x000000000000000000000000000000000000000000000000000000000000abcd",
+   "houseEdge": 0,
+   "result": 25.71
+  },
+  {
+   "index": 5,
+   "gameHash": "06648f5bb473b26a08940c7c030c9ff31dde4880dfffad9a3adefc87b0315a05",
+   "previousHash": "6aa6822ccb21bd0a2b6183f99b1831da446d4908fb46483bfdacd2758b5b32b8",
+   "salt": "galabet",
+   "houseEdge": 0.01,
+   "result": 2.76
+  },
+  {
+   "index": 5,
+   "gameHash": "06648f5bb473b26a08940c7c030c9ff31dde4880dfffad9a3adefc87b0315a05",
+   "previousHash": "6aa6822ccb21bd0a2b6183f99b1831da446d4908fb46483bfdacd2758b5b32b8",
+   "salt": "galabet",
+   "houseEdge": 0,
+   "result": 2.79
+  },
+  {
+   "index": 6,
+   "gameHash": "f99674f50411d79b25b3d2287f80dd2bc0fcda750c4a73168e544b1c39035409",
+   "previousHash": "06648f5bb473b26a08940c7c030c9ff31dde4880dfffad9a3adefc87b0315a05",
+   "salt": "0x000000000000000000000000000000000000000000000000000000000000abcd",
+   "houseEdge": 0.01,
+   "result": 1.22
+  },
+  {
+   "index": 6,
+   "gameHash": "f99674f50411d79b25b3d2287f80dd2bc0fcda750c4a73168e544b1c39035409",
+   "previousHash": "06648f5bb473b26a08940c7c030c9ff31dde4880dfffad9a3adefc87b0315a05",
+   "salt": "0x000000000000000000000000000000000000000000000000000000000000abcd",
+   "houseEdge": 0,
+   "result": 1.23
+  },
+  {
+   "index": 6,
+   "gameHash": "f99674f50411d79b25b3d2287f80dd2bc0fcda750c4a73168e544b1c39035409",
+   "previousHash": "06648f5bb473b26a08940c7c030c9ff31dde4880dfffad9a3adefc87b0315a05",
+   "salt": "galabet",
+   "houseEdge": 0.01,
+   "result": 1
+  },
+  {
+   "index": 6,
+   "gameHash": "f99674f50411d79b25b3d2287f80dd2bc0fcda750c4a73168e544b1c39035409",
+   "previousHash": "06648f5bb473b26a08940c7c030c9ff31dde4880dfffad9a3adefc87b0315a05",
+   "salt": "galabet",
+   "houseEdge": 0,
+   "result": 1.01
+  },
+  {
+   "index": 7,
+   "gameHash": "125332e4014edb10981efc138d3a536cf1362b2ce83c00f00c8c26481df9314d",
+   "previousHash": "f99674f50411d79b25b3d2287f80dd2bc0fcda750c4a73168e544b1c39035409",
+   "salt": "0x000000000000000000000000000000000000000000000000000000000000abcd",
+   "houseEdge": 0.01,
+   "result": 5.61
+  },
+  {
+   "index": 7,
+   "gameHash": "125332e4014edb10981efc138d3a536cf1362b2ce83c00f00c8c26481df9314d",
+   "previousHash": "f99674f50411d79b25b3d2287f80dd2bc0fcda750c4a73168e544b1c39035409",
+   "salt": "0x000000000000000000000000000000000000000000000000000000000000abcd",
+   "houseEdge": 0,
+   "result": 5.66
+  },
+  {
+   "index": 7,
+   "gameHash": "125332e4014edb10981efc138d3a536cf1362b2ce83c00f00c8c26481df9314d",
+   "previousHash": "f99674f50411d79b25b3d2287f80dd2bc0fcda750c4a73168e544b1c39035409",
+   "salt": "galabet",
+   "houseEdge": 0.01,
+   "result": 1.16
+  },
+  {
+   "index": 7,
+   "gameHash": "125332e4014edb10981efc138d3a536cf1362b2ce83c00f00c8c26481df9314d",
+   "previousHash": "f99674f50411d79b25b3d2287f80dd2bc0fcda750c4a73168e544b1c39035409",
+   "salt": "galabet",
+   "houseEdge": 0,
+   "result": 1.18
+  },
+  {
+   "index": 8,
+   "gameHash": "1e7524518c74c0e0ac05ff98b1220facfca59b692bc189cac768b6cca6ab3ac1",
+   "previousHash": "125332e4014edb10981efc138d3a536cf1362b2ce83c00f00c8c26481df9314d",
+   "salt": "0x000000000000000000000000000000000000000000000000000000000000abcd",
+   "houseEdge": 0.01,
+   "result": 2.65
+  },
+  {
+   "index": 8,
+   "gameHash": "1e7524518c74c0e0ac05ff98b1220facfca59b692bc189cac768b6cca6ab3ac1",
+   "previousHash": "125332e4014edb10981efc138d3a536cf1362b2ce83c00f00c8c26481df9314d",
+   "salt": "0x000000000000000000000000000000000000000000000000000000000000abcd",
+   "houseEdge": 0,
+   "result": 2.68
+  },
+  {
+   "index": 8,
+   "gameHash": "1e7524518c74c0e0ac05ff98b1220facfca59b692bc189cac768b6cca6ab3ac1",
+   "previousHash": "125332e4014edb10981efc138d3a536cf1362b2ce83c00f00c8c26481df9314d",
+   "salt": "galabet",
+   "houseEdge": 0.01,
+   "result": 10.98
+  },
+  {
+   "index": 8,
+   "gameHash": "1e7524518c74c0e0ac05ff98b1220facfca59b692bc189cac768b6cca6ab3ac1",
+   "previousHash": "125332e4014edb10981efc138d3a536cf1362b2ce83c00f00c8c26481df9314d",
+   "salt": "galabet",
+   "houseEdge": 0,
+   "result": 11.1
+  },
+  {
+   "index": 9,
+   "gameHash": "facfcd13dbf15af66712a9c502eca6e0866c3340dcc9ae41731d428e6c201fd7",
+   "previousHash": "1e7524518c74c0e0ac05ff98b1220facfca59b692bc189cac768b6cca6ab3ac1",
+   "salt": "0x000000000000000000000000000000000000000000000000000000000000abcd",
+   "houseEdge": 0.01,
+   "result": 1.08
+  },
+  {
+   "index": 9,
+   "gameHash": "facfcd13dbf15af66712a9c502eca6e0866c3340dcc9ae41731d428e6c201fd7",
+   "previousHash": "1e7524518c74c0e0ac05ff98b1220facfca59b692bc189cac768b6cca6ab3ac1",
+   "salt": "0x000000000000000000000000000000000000000000000000000000000000abcd",
+   "houseEdge": 0,
+   "result": 1.1
+  },
+  {
+   "index": 9,
+   "gameHash": "facfcd13dbf15af66712a9c502eca6e0866c3340dcc9ae41731d428e6c201fd7",
+   "previousHash": "1e7524518c74c0e0ac05ff98b1220facfca59b692bc189cac768b6cca6ab3ac1",
+   "salt": "galabet",
+   "houseEdge": 0.01,
+   "result": 1.61
+  },
+  {
+   "index": 9,
+   "gameHash": "facfcd13dbf15af66712a9c502eca6e0866c3340dcc9ae41731d428e6c201fd7",
+   "previousHash": "1e7524518c74c0e0ac05ff98b1220facfca59b692bc189cac768b6cca6ab3ac1",
+   "salt": "galabet",
+   "houseEdge": 0,
+   "result": 1.63
+  },
+  {
+   "index": 10,
+   "gameHash": "994a446efa5e0ad10c1cb5b73d577d5e91500d6b79467723d62167454648db69",
+   "previousHash": "facfcd13dbf15af66712a9c502eca6e0866c3340dcc9ae41731d428e6c201fd7",
+   "salt": "0x000000000000000000000000000000000000000000000000000000000000abcd",
+   "houseEdge": 0.01,
+   "result": 1.13
+  },
+  {
+   "index": 10,
+   "gameHash": "994a446efa5e0ad10c1cb5b73d577d5e91500d6b79467723d62167454648db69",
+   "previousHash": "facfcd13dbf15af66712a9c502eca6e0866c3340dcc9ae41731d428e6c201fd7",
+   "salt": "0x000000000000000000000000000000000000000000000000000000000000abcd",
+   "houseEdge": 0,
+   "result": 1.15
+  },
+  {
+   "index": 10,
+   "gameHash": "994a446efa5e0ad10c1cb5b73d577d5e91500d6b79467723d62167454648db69",
+   "previousHash": "facfcd13dbf15af66712a9c502eca6e0866c3340dcc9ae41731d428e6c201fd7",
+   "salt": "galabet",
+   "houseEdge": 0.01,
+   "result": 2.18
+  },
+  {
+   "index": 10,
+   "gameHash": "994a446efa5e0ad10c1cb5b73d577d5e91500d6b79467723d62167454648db69",
+   "previousHash": "facfcd13dbf15af66712a9c502eca6e0866c3340dcc9ae41731d428e6c201fd7",
+   "salt": "galabet",
+   "houseEdge": 0,
+   "result": 2.21
+  },
+  {
+   "index": 11,
+   "gameHash": "ab37723062965715c5e6eeb54816f909a8e787bd3bfaee67a3cc0a3b90707de7",
+   "previousHash": "994a446efa5e0ad10c1cb5b73d577d5e91500d6b79467723d62167454648db69",
+   "salt": "0x000000000000000000000000000000000000000000000000000000000000abcd",
+   "houseEdge": 0.01,
+   "result": 6.71
+  },
+  {
+   "index": 11,
+   "gameHash": "ab37723062965715c5e6eeb54816f909a8e787bd3bfaee67a3cc0a3b90707de7",
+   "previousHash": "994a446efa5e0ad10c1cb5b73d577d5e91500d6b79467723d62167454648db69",
+   "salt": "0x000000000000000000000000000000000000000000000000000000000000abcd",
+   "houseEdge": 0,
+   "result": 6.78
+  },
+  {
+   "index": 11,
+   "gameHash": "ab37723062965715c5e6eeb54816f909a8e787bd3bfaee67a3cc0a3b90707de7",
+   "previousHash": "994a446efa5e0ad10c1cb5b73d577d5e91500d6b79467723d62167454648db69",
+   "salt": "galabet",
+   "houseEdge": 0.01,
+   "result": 7.33
+  },
+  {
+   "index": 11,
+   "gameHash": "ab37723062965715c5e6eeb54816f909a8e787bd3bfaee67a3cc0a3b90707de7",
+   "previousHash": "994a446efa5e0ad10c1cb5b73d577d5e91500d6b79467723d62167454648db69",
+   "salt": "galabet",
+   "houseEdge": 0,
+   "result": 7.4
+  },
+  {
+   "index": 12,
+   "gameHash": "5c1f7d3e8a2b4c6d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d",
+   "previousHash": "ab37723062965715c5e6eeb54816f909a8e787bd3bfaee67a3cc0a3b90707de7",
+   "salt": "0x000000000000000000000000000000000000000000000000000000000000abcd",
+   "houseEdge": 0.01,
+   "result": 6.88
+  },
+  {
+   "index": 12,
+   "gameHash": "5c1f7d3e8a2b4c6d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d",
+   "previousHash": "ab37723062965715c5e6eeb54816f909a8e787bd3bfaee67a3cc0a3b90707de7",
+   "salt": "0x000000000000000000000000000000000000000000000000000000000000abcd",
+   "houseEdge": 0,
+   "result": 6.95
+  },
+  {
+   "index": 12,
+   "gameHash": "5c1f7d3e8a2b4c6d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d",
+   "previousHash": "ab37723062965715c5e6eeb54816f909a8e787bd3bfaee67a3cc0a3b90707de7",
+   "salt": "galabet",
+   "houseEdge": 0.01,
+   "result": 1.23
+  },
+  {
+   "index": 12,
+   "gameHash": "5c1f7d3e8a2b4c6d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d",
+   "previousHash": "ab37723062965715c5e6eeb54816f909a8e787bd3bfaee67a3cc0a3b90707de7",
+   "salt": "galabet",
+   "houseEdge": 0,
+   "result": 1.24
+  }
+ ]
+}

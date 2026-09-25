@@ -1,0 +1,51 @@
+{
+ "spec": "GFS/1.0",
+ "notes": [
+  "Ed25519 over the canonical JSON of the record without signature and signer",
+  "secret key layout: 32-byte seed || 32-byte public key, hex"
+ ],
+ "testSecretKey": "9d61b19deffd5a60ba844af492ec2cc44449c5697b326919703bac031cae7f60d75a980182b10ab7d54bfed3c964073a0ee172f3daa62325af021a68f707511a",
+ "publicKey": "d75a980182b10ab7d54bfed3c964073a0ee172f3daa62325af021a68f707511a",
+ "items": [
+  {
+   "record": {
+    "spec": "GFS/1.0",
+    "profile": "single-player",
+    "game": "dice",
+    "params": {},
+    "commitment": "60e05bd1b195af2f94112fa7197a5c88289058840ce7c6df9693756bc6250f55",
+    "clientSeed": "galabet",
+    "nonce": 0,
+    "cursor": 0,
+    "result": 12.34,
+    "at": 1700000000000
+   },
+   "payload": "{\"at\":1700000000000,\"clientSeed\":\"galabet\",\"commitment\":\"60e05bd1b195af2f94112fa7197a5c88289058840ce7c6df9693756bc6250f55\",\"cursor\":0,\"game\":\"dice\",\"nonce\":0,\"params\":{},\"profile\":\"single-player\",\"result\":12.34,\"spec\":\"GFS/1.0\"}",
+   "signature": "a3c49b2bd1ee099b5ed613209d2ebdd8cf99b956e33150864ae006d6ad4e144d35e4df887d2a02def18d64fcf8619cafaddeabe3ff1edc24cca4dc8b4b8d310c",
+   "signer": "d75a980182b10ab7d54bfed3c964073a0ee172f3daa62325af021a68f707511a"
+  },
+  {
+   "record": {
+    "spec": "GFS/1.0",
+    "profile": "single-player",
+    "game": "mines",
+    "params": {
+     "mines": 3
+    },
+    "commitment": "60e05bd1b195af2f94112fa7197a5c88289058840ce7c6df9693756bc6250f55",
+    "clientSeed": "a",
+    "nonce": 65535,
+    "cursor": 2,
+    "result": [
+     1,
+     7,
+     24
+    ],
+    "at": 1700000000001
+   },
+   "payload": "{\"at\":1700000000001,\"clientSeed\":\"a\",\"commitment\":\"60e05bd1b195af2f94112fa7197a5c88289058840ce7c6df9693756bc6250f55\",\"cursor\":2,\"game\":\"mines\",\"nonce\":65535,\"params\":{\"mines\":3},\"profile\":\"single-player\",\"result\":[1,7,24],\"spec\":\"GFS/1.0\"}",
+   "signature": "227f367d57851e7f8a147727fbda183ef90c822bc5719e4fd7e72efc8105b2bb4dfe2aa5875d1fb0190f42901618eadaa55c91534e682a0a1ed1d77a751fa40e",
+   "signer": "d75a980182b10ab7d54bfed3c964073a0ee172f3daa62325af021a68f707511a"
+  }
+ ]
+}

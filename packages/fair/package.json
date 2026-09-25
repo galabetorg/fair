@@ -1,0 +1,51 @@
+{
+  "name": "@galabet/fair",
+  "version": "0.1.0",
+  "description": "Reference implementation of the Galabet Fair Spec (GFS/1.0): provably fair seeds, commitments, HMAC derivation, float extraction, game mappers, records and verification. Zero runtime dependencies.",
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./games": {
+      "types": "./dist/games/index.d.ts",
+      "import": "./dist/games/index.js",
+      "require": "./dist/games/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "node --import tsx --test test/*.test.ts test/*.test.mjs",
+    "test:props": "node --import tsx --test test/props/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "provably-fair",
+    "casino",
+    "hmac",
+    "sha256",
+    "fairness",
+    "gfs"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/galabetorg/fair",
+    "directory": "packages/fair"
+  },
+  "devDependencies": {
+    "tsup": "^8.3.0",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3"
+  }
+}
